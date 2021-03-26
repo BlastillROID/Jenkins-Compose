@@ -9,7 +9,12 @@ This volume will be used to persist all your data: configurations, plugins, pipe
 
 The remaining two volumes allow you to use docker inside the Jenkins server (Yes, you can create docker containers inside a docker container).
 
-## Get the generated Admin Password
+### Run Docker Compose
+```
+docker-compose up -d
+```
+
+### Get the generated Admin Password
 
 ```
 docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
